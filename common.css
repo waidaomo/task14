@@ -20,7 +20,7 @@ header{
 	padding: 0.5% 7%;
 	color:#29b078;
 	background: #fafafa;
-	height: 2.6rem;
+	height: 3rem;
 }
 .chat{
 	word-spacing: 1rem;
@@ -42,6 +42,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 8rem;
 }
 .hamburger{
 	position: absolute;
@@ -56,8 +57,8 @@ header{
 .nav-list{
 	padding: 0;
 	font-size: 2rem;
-	letter-spacing: .5rem;
 	list-style: none;
+	margin-right: -1.5rem;
 }
 
 .nav-icon{
@@ -65,23 +66,28 @@ header{
 }
 
 .nav-a{
-	padding: 1.5rem 0 1.5rem 1rem; 
-	color: #fff;
+	padding: 2.5rem 1.5rem;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 .nav-a1{
-	padding: 1.5rem 0 1.5rem 1rem; 
+	/*padding: 1.5rem 0 1.5rem 1rem; */
 	color: #fff;
     text-decoration: none;
 }
-.nav-b, .nav-b1{
-	padding: 1.5rem 0 1.5rem 1rem;
+.nav-b{
+	padding: 2.5rem 1.5rem;
+	color: #fff;
+    text-decoration: none;
+}
+.nav-b1{
+	/*padding: 2.5rem 1.5rem;*/
 	color: #fff;
     text-decoration: none;
 }
 .nav-b:hover{
-	border-bottom: 2px solid #fff;
+	border-bottom: 3px solid #fff;
 }
 .nav-list1{
 	padding: 0;
@@ -130,7 +136,14 @@ header{
 
 @media screen and (max-width: 1000px){
 	.company1 {
-	    width: 30%;
+	    width: 33%;
+	}
+	.bac{
+	width: 49%;
+    margin-top: 2%;
+	}
+	.content{
+		width: 48%;
 	}
 }
 @media screen and (min-width: 1000px){
@@ -140,7 +153,7 @@ header{
 }
 @media screen and (max-width: 840px){
 	.how {
-	    width: 49%;
+	    width: 33%;
 	}
 	.advantage{
 		justify-content: space-between;
@@ -151,8 +164,14 @@ header{
 	.content{
 		width: 100%;
 	}
+	.count{
+		width: 49%;
+	}
 }
 @media screen and (max-width: 690px){
+	.how{
+		width: 48%;
+	}
 	.company1 {
 	    width: 100%;
 	}
@@ -193,19 +212,21 @@ header{
 /*底部格式*/
 .last{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-	padding: 2rem;
+	/*padding: 2rem;*/
 	text-align: center;
 	color: #fff;
 	overflow: hidden;
+	padding: 0 7%;
 }
 footer a{
 	color: #fff;
+	text-decoration: none;
 }
 footer a:hover{
-	text-decoration: none;
+	border-bottom: 1px solid #fff;
 }
 .contact{
 	text-align: left;

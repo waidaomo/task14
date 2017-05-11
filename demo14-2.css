@@ -43,13 +43,14 @@ main{
 .web-css{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 2rem;
 }
 /*鼠标滑过出现岗位介绍*/
 .ios{
 	position: absolute;
 	z-index: 1;
-	display: none;
+	opacity: 0;
 	width: 90%;
 	height: 90%;
 	font-size: 1.6rem;
@@ -66,16 +67,23 @@ main{
 }
 
 .content:hover .ios{
-	display: block;
+    opacity: 1;
+    transition:2s ease;
+	-moz-transition:2s ease; /* Firefox 4 */
+	-webkit-transition:2s ease; /* Safari and Chrome */
+	-o-transition:2s ease; /* Opera */
 }
 /*单个岗位介绍*/
 .content{
 	position: relative;
-    width: 45%;
-    margin: 0 auto;
+    width: 32%;
     padding: 0;
     border: #edecec solid;
-    margin: 4rem 1rem 0;
+    margin-top: 4%;
+}
+.content::after{
+	content: "";
+	width: 32%;
 }
 .one{
     display: flex;

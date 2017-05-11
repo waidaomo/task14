@@ -123,7 +123,7 @@ main{
 .advantage{
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-top: 4rem;
@@ -147,7 +147,7 @@ main{
 }
 .count{
 	border-left: 1px dashed #dedede;
-	padding: 4% 7% 7% 0;
+	/*padding: 4% 7% 7% 0;*/
 }
 .learn span{
 	font-weight: 900;
@@ -165,6 +165,12 @@ main{
 	padding: 0 7%;
 }
 
+.learn-list{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 .how-learn p{
 	font-size: 2rem;
 	font-weight: bold;
@@ -185,10 +191,12 @@ main{
 
 }
 .how{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 	margin-bottom: 2rem;
 	height: 6rem;
-	width: 33%;
+	width: 25%;
 }
 
 .how span{
@@ -225,9 +233,15 @@ main{
 .great h4{
     padding: 5%;
 }
+
+.man{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .bac{
 	display: inline-block;
-	margin: .5rem;
+	/*margin: .5rem;*/
 	font-size: 1.4rem;
 	background: #fff;
 	padding: 1rem 0;
@@ -267,12 +281,11 @@ main{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 1rem;
+	/*padding: 1rem;*/
 	background: #fff;
 }
 .company1{
-	height: 12rem;
-	line-height: 12rem;
+	padding: 4rem 0;
 	width: 20%;
 }
 
@@ -292,12 +305,27 @@ main{
 }
 
 .nav-bottom ul{
-    display: inline-block;
-	width: 15%;
-	min-width: 100px;
-	text-align: left;
+	width: 8.6%;
+	min-width: 70px;
+	padding-left: 1.3rem;
 	color: #999;
+	height: 14px;
+	border-bottom: 1px solid #fafafa;
 }
 .nav-bottom a{
 	color: #999;
+	text-decoration: none;
+}
+
+.row ul:hover{
+	border-bottom: 1px solid #26a26f;
+}
+.row li{
+	height: 14px;
+}
+.row{
+	display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    align-items: center;
 }
