@@ -62,12 +62,12 @@
 .right{
 	float: right;
 	width: 70%;
+    margin-bottom: 4rem;
 	text-indent: 2.4rem;
 	line-height: 2rem;
 	color: #b5b5b5;
     font-size: 1.4rem;
 	box-shadow: 0 0 5px #edecec;
-	padding: 0;
 	background: #fff;
 }
 .alibaba{

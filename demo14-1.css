@@ -256,8 +256,10 @@ main{
 	margin: 2rem auto;
 }
 .switch1{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
     background: #29ae78;
-    padding: .1rem .8rem;
     border-radius: 50%;
     background: #efefef;
     margin-right: .2rem;
